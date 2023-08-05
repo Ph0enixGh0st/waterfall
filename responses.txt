@@ -1,0 +1,312 @@
+Successfully sent POST request for Booz Allen Hamilton
+{'job_id': '6c134dc7-100c-44f4-b563-d7276ea4b78f', 'start_date': '2023-08-04T12:44:54.549000+00:00'}
+Successfully sent POST request for Visual Edge It
+{'job_id': 'f3b5c888-de31-4351-af49-f19b3e256566', 'start_date': '2023-08-04T12:44:55.681000+00:00'}
+Successfully sent POST request for HubX
+{'job_id': '39179e1a-da63-4fb2-97aa-d92f6b54c97e', 'start_date': '2023-08-04T12:44:56.765000+00:00'}
+Successfully sent GET request for job_id: 06c7ccd9-72b7-436d-8962-68ceb18e895b
+{'status': 'SUCCEEDED', 'start_date': '2023-08-04T12:25:16.051000+00:00', 'stop_date': '2023-08-04T12:25:16.704000+00:00', 'input': {'task': {'domain': 'visualedgeit.com', 'limit': 10, 'company_name': 'Visual Edge It', 'webhook_url': None, 'custom_fields': None, 'job_id': '06c7ccd9-72b7-436d-8962-68ceb18e895b', 'context_id': '06c7ccd9-72b7-436d-8962-68ceb18e895b'}}, 'output': {'company': {'id': 'e9d81bf9-f442-49a3-8659-4218ead3028f', 'domain': 'visualedgeit.com', 'company_name': 'Visual Edge It', 'website': None, 'linkedin_id': None, 'linkedin_url': None, 'linkedin_description': None, 'linkedin_logo_url': None, 'size': None, 'linkedin_size': None, 'linkedin_industry': None, 'linkedin_type': None, 'linkedin_followers': None, 'linkedin_founded': None, 'linkedin_employees_count': None, 'linkedin_address': None}, 'persons': []}}
+(venv) phoenix@Mkhals-MacBook-Air waterfall % python3 main.py
+  File "/Users/phoenix/Desktop/Python_Projects/waterfall/main.py", line 64
+    fetch_job(waterfall_api_key)
+IndentationError: unexpected indent
+(venv) phoenix@Mkhals-MacBook-Air waterfall % python3 main.py
+Successfully sent GET request for job_id: 39179e1a-da63-4fb2-97aa-d92f6b54c97e
+{
+  'status': 'SUCCEEDED',
+  'start_date': '2023-08-04T12:44:56.765000+00:00',
+  'stop_date': '2023-08-04T12:45:44.945000+00:00',
+  'input':
+      {
+        'task':
+          {
+            'domain':
+              'hubx.co', 'limit': 10,
+              'company_name': 'HubX',
+              'webhook_url': None,
+              'custom_fields': None,
+              'job_id': '39179e1a-da63-4fb2-97aa-d92f6b54c97e',
+              'context_id': '39179e1a-da63-4fb2-97aa-d92f6b54c97e'
+          }
+        },
+  'output':
+      {
+        'company':
+            {
+              'id': 'a162fb2a-fb8c-42b8-8460-cfe28900055a',
+              'domain': 'hubx.co',
+              'company_name': 'HubX',
+              'website': 'https://hubx.co/',
+              'linkedin_id': 'hubxstudios',
+              'linkedin_url': 'https://www.linkedin.com/company/hubxstudios/',
+              'linkedin_description': 'At HubX, we are building and growing highly-scalable mobile apps with a track record to be proud of — our apps and games have reached over 100 million users across 160 countries.\n\nWe are structured as a hub, focusing on collaboration and coordination between autonomous in-house studios and essential central departments. Each studio is expertly working on a specific app category while taking advantage of the shared resources of the central hub.\n\nWe are in an exciting period of growth and we are seeking exceptional talents who share our vision.\n\nJoin our team!\n\nBe a part of our team with your talent, passion, and natural gift to build products millions of people love.', 'linkedin_logo_url': 'https://media.licdn.com/dms/image/D4D0BAQFoj4vHDtGp0Q/company-logo_200_200/0/1663163438741?e=2147483647&v=beta&t=HvbekwN1SKDtwtKK9Txjkkxi6RWJ-FsKa4AAuyUZr0c',
+              'size': '51-200',
+              'linkedin_size': '51-200 employees',
+              'linkedin_industry': 'Software Development',
+              'linkedin_type': 'Privately Held',
+              'linkedin_followers': None,
+              'linkedin_founded': 2022,
+              'linkedin_employees_count': 78,
+              'linkedin_address': 'Mistral Tower, No:15 D:251 / Çınarlı Mahallesi / Ankara Caddesi / Bayraklı; Izmir, TR'
+            },
+        'persons':
+            [
+              {
+                'id': 'd7f4d477-a4a0-4cbf-b462-0b9337ca6035',
+                'first_name': 'Didem',
+                'last_name': 'Eren',
+                'linkedin_id': None,
+                'linkedin_url': None,
+                'personal_email': None,
+                'location': None,
+                'country': None,
+                'company_id': 'a162fb2a-fb8c-42b8-8460-cfe28900055a',
+                'company_linkedin_id': 'hubxstudios',
+                'company_name': 'HubX',
+                'company_domain': 'hubx.co',
+                'professional_email': 'didem@hubx.co',
+                'mobile_phone': None,
+                'phone_numbers': [],
+                'title': 'Developer',
+                'seniority': 'Other',
+                'department': 'Other',
+                'email_verified': True,
+                'email_confidence': 'high',
+                'email_verified_status': 'safe',
+                'domain_age_days': '1092',
+                'smtp_provider': 'g-suite',
+                'mx_record': 'aspmx.l.google.com'
+              },
+              {
+                'id': 'f72549e4-0e91-4f31-8806-e8e2bc5afd47',
+                'first_name': 'Ezgi',
+                'last_name': 'Devrim',
+                'linkedin_id': None,
+                'linkedin_url': None,
+                'personal_email': None,
+                'location': None,
+                'country': None,
+                'company_id': 'a162fb2a-fb8c-42b8-8460-cfe28900055a',
+                'company_linkedin_id': 'hubxstudios',
+                'company_name': 'HubX',
+                'company_domain': 'hubx.co',
+                'professional_email': 'ezgi.devrim@hubx.co',
+                'mobile_phone': None,
+                'phone_numbers': [],
+                'title': 'React Native Developer',
+                'seniority': 'Other',
+                'department': 'Other',
+                'email_verified': True,
+                'email_confidence': 'high',
+                'email_verified_status': 'safe',
+                'domain_age_days': '1092',
+                'smtp_provider': 'g-suite',
+                'mx_record': 'aspmx.l.google.com'
+              },
+              {
+                'id': '8116520f-47ea-42b9-955c-94bb247f8082',
+                'first_name': 'Orhan',
+                'last_name': 'Dalgara',
+                'linkedin_id': None,
+                'linkedin_url': None,
+                'personal_email': None,
+                'location': None,
+                'country': None,
+                'company_id': 'a162fb2a-fb8c-42b8-8460-cfe28900055a',
+                'company_linkedin_id': 'hubxstudios',
+                'company_name': 'HubX',
+                'company_domain': 'hubx.co',
+                'professional_email': 'orhan@hubx.co',
+                'mobile_phone': None,
+                'phone_numbers': [],
+                'title': 'iOS Developer',
+                'seniority': 'Other',
+                'department': 'Other',
+                'email_verified': True,
+                'email_confidence': 'high',
+                'email_verified_status': 'safe',
+                'domain_age_days': '1092',
+                'smtp_provider': 'g-suite',
+                'mx_record': 'aspmx.l.google.com'
+              },
+              {
+                'id': '69bc098b-cc88-4f0a-a15c-267b76bdc56e',
+                'first_name': 'Oğulcan Yusuf',
+                'last_name': 'Bayter',
+                'linkedin_id': 'ogulcanbayter',
+                'linkedin_url': 'https://www.linkedin.com/in/ogulcanbayter/',
+                'personal_email': None,
+                'location': 'Turkey',
+                'country': 'Turkey',
+                'company_id': 'a162fb2a-fb8c-42b8-8460-cfe28900055a',
+                'company_linkedin_id': 'hubxstudios',
+                'company_name': 'HubX',
+                'company_domain': 'hubx.co',
+                'professional_email': 'ogulcan.bayter@hubx.co',
+                'mobile_phone': None,
+                'phone_numbers': [],
+                'title': 'Frontend Developer',
+                'seniority': 'Other',
+                'department': 'Other',
+                'email_verified': True,
+                'email_confidence': 'high',
+                'email_verified_status': 'safe',
+                'domain_age_days': '1092',
+                'smtp_provider': 'g-suite',
+                'mx_record': 'aspmx.l.google.com'
+              },
+              {
+                'id': '5c733ee6-59a5-45d0-a3d6-351b03bb6259',
+                'first_name': 'İstemihan',
+                'last_name': 'Çelik',
+                'linkedin_id': 'istemihan%c3%a7elik',
+                'linkedin_url': 'https://www.linkedin.com/in/istemihan%c3%a7elik/',
+                'personal_email': None,
+                'location': 'İzmir, Turkey',
+                'country': 'Turkey',
+                'company_id': 'a162fb2a-fb8c-42b8-8460-cfe28900055a',
+                'company_linkedin_id': 'hubxstudios',
+                'company_name': 'HubX',
+                'company_domain': 'hubx.co',
+                'professional_email': 'istemihan.celik@hubx.co',
+                'mobile_phone': None,
+                'phone_numbers': [],
+                'title': 'iOS Developer',
+                'seniority': 'Other',
+                'department': 'Other',
+                'email_verified': True,
+                'email_confidence': 'high',
+                'email_verified_status': 'safe',
+                'domain_age_days': '1092',
+                'smtp_provider': 'g-suite',
+                'mx_record': 'aspmx.l.google.com'
+              },
+              {
+                'id': 'a6bd14df-a24b-45d7-8f3e-952802c88423',
+                'first_name': 'Bora',
+                'last_name': 'Özçoban',
+                'linkedin_id': 'boraozcoban',
+                'linkedin_url': 'https://www.linkedin.com/in/boraozcoban/',
+                'personal_email': None,
+                'location': 'İzmir, Turkey',
+                'country': 'Turkey',
+                'company_id': 'a162fb2a-fb8c-42b8-8460-cfe28900055a',
+                'company_linkedin_id': 'hubxstudios',
+                'company_name': 'HubX',
+                'company_domain': 'hubx.co',
+                'professional_email': 'bora.ozcoban@hubx.co',
+                'mobile_phone': None,
+                'phone_numbers': [],
+                'title': 'Frontend Developer Intern',
+                'seniority': 'Other',
+                'department': 'Other',
+                'email_verified': True,
+                'email_confidence': 'high',
+                'email_verified_status': 'safe',
+                'domain_age_days': '1092',
+                'smtp_provider': 'g-suite',
+                'mx_record': 'aspmx.l.google.com'
+              },
+              {
+                'id': '328fac1a-2599-4e3b-96eb-5152e7ca9daf',
+                'first_name': 'Levent',
+                'last_name': 'Uysal',
+                'linkedin_id': 'levent-uysal-b17bbb39',
+                'linkedin_url': 'https://www.linkedin.com/in/levent-uysal-b17bbb39/',
+                'personal_email': None,
+                'location': 'İzmir, Turkey',
+                'country': 'Turkey',
+                'company_id': 'a162fb2a-fb8c-42b8-8460-cfe28900055a',
+                'company_linkedin_id': 'hubxstudios',
+                'company_name': 'HubX',
+                'company_domain': 'hubx.co',
+                'professional_email': 'levent@hubx.co',
+                'mobile_phone': None,
+                'phone_numbers': [],
+                'title': 'Senior Backend Developer',
+                'seniority': 'Other',
+                'department': 'Other',
+                'email_verified': True,
+                'email_confidence': 'high',
+                'email_verified_status': 'safe',
+                'domain_age_days': '1092',
+                'smtp_provider': 'g-suite',
+                'mx_record': 'aspmx.l.google.com'
+              },
+              {
+                'id': '0559918b-b61e-4c07-b8b1-fc3f033f453a',
+                'first_name': 'Hüseyin',
+                'last_name': 'Yenilmez',
+                'linkedin_id': 'huseyin-yenilmez',
+                'linkedin_url': 'https://www.linkedin.com/in/huseyin-yenilmez/',
+                'personal_email': None,
+                'location': 'Muğla, Turkey',
+                'country': 'Turkey',
+                'company_id': 'a162fb2a-fb8c-42b8-8460-cfe28900055a',
+                'company_linkedin_id': 'hubxstudios',
+                'company_name': 'HubX',
+                'company_domain': 'hubx.co',
+                'professional_email': 'huseyin.yenilmez@hubx.co',
+                'mobile_phone': None,
+                'phone_numbers': [],
+                'title': 'React Native Developer',
+                'seniority': 'Other',
+                'department': 'Other',
+                'email_verified': True,
+                'email_confidence': 'high',
+                'email_verified_status': 'safe',
+                'domain_age_days': '1092',
+                'smtp_provider': 'g-suite',
+                'mx_record': 'aspmx.l.google.com'
+              },
+              {
+                'id': '7062efcd-0d76-432b-b3e5-940c5526811a',
+                'first_name': 'Abdulkadir',
+                'last_name': 'Özkan',
+                'linkedin_id': 'abdulkadir-%c3%b6zkan-42821b132',
+                'linkedin_url': 'https://www.linkedin.com/in/abdulkadir-%c3%b6zkan-42821b132/',
+                'personal_email': None,
+                'location': 'Istanbul, Turkey',
+                'country': 'Turkey',
+                'company_id': 'a162fb2a-fb8c-42b8-8460-cfe28900055a',
+                'company_linkedin_id': 'hubxstudios',
+                'company_name': 'HubX',
+                'company_domain': 'hubx.co',
+                'professional_email': 'abdulkadir.ozkan@hubx.co',
+                'mobile_phone': None,
+                'phone_numbers': [],
+                'title': 'React Native Developer',
+                'seniority': 'Other',
+                'department': 'Other',
+                'email_verified': True,
+                'email_confidence': 'high',
+                'email_verified_status': 'safe',
+                'domain_age_days': '1092',
+                'smtp_provider': 'g-suite',
+                'mx_record': 'aspmx.l.google.com'
+              }
+            ]
+          }
+      }
+
+
+
+
+
+
+
+
+{'job_id': 'be082a93-a7cf-4fb3-af26-6f3727437beb', 'start_date': '2023-08-04T14:56:16.256000+00:00'}
+Job IDs: {'be082a93-a7cf-4fb3-af26-6f3727437beb', '23949c2b-f696-4c6e-a0f7-d3f750d95dcc', '5bc42200-f562-4ee3-91e5-28476d53ca20'}
+Successfully sent GET request for job_id: be082a93-a7cf-4fb3-af26-6f3727437beb
+{'status': 'RUNNING',
+'start_date': '2023-08-04T14:56:16.256000+00:00',
+'input': {'task': {'domain': 'hubx.co', 'limit': 10,
+'company_name': 'HubX', 'webhook_url': None, 'custom_fields': None, 'job_id': 'be082a93-a7cf-4fb3-af26-6f3727437beb', 'context_id': 'be082a93-a7cf-4fb3-af26-6f3727437beb'}}}
+
+
+
+
+{'status': 'RUNNING',
+
+{'status': 'SUCCEEDED',
