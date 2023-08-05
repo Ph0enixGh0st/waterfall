@@ -110,12 +110,11 @@ def write_contacts_to_db(contacts):
     engine = create_engine(DATABASE_URL)
 
     try:
-        # Create a session to interact with the database
+        # Creates a session to interact with the database
         Session = sessionmaker(bind=engine)
         session = Session()
 
-        # Now you can use the session to add, query, and manipulate data in the 'contact' table
-        # Example: Inserting data into the table
+        # Now loops through the contacts and add into DB
         for contact in contacts:
             new_contact = Contact(
                 contact_linkedin_id=contact["id"],
