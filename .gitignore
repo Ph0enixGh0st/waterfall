@@ -8,7 +8,6 @@ __pycache__/
 *.so
 
 # Distribution / packaging
-companies/*
 contacts/*
 .DS_Store
 *.DS_Store

@@ -32,39 +32,39 @@ def fetch_company_and_contacts(waterfall_api_key, job_ids):
             res = response.json()
 
             company = {
-                "comp_id": res['output']['company']['id'],
-                "comp_domain": res['output']['company']['domain'],
-                "comp_name": res['output']['company']['company_name'],
-                "comp_website": res['output']['company']['website'],
-                "comp_linkedin_id": res['output']['company']['linkedin_id'],
-                "comp_linkedin_url": res['output']['company']['linkedin_url'],
-                "comp_linkedin_description": res['output']['company']['linkedin_description'],
-                "comp_size": res['output']['company']['size'],
-                "comp_linkedin_industry": res['output']['company']['linkedin_industry'],
-                "comp_linkedin_type": res['output']['company']['linkedin_type'],
-                "comp_linkedin_founded": res['output']['company']['linkedin_founded'],
-                "linkedin_employees_count": res['output']['company']['linkedin_employees_count'],
-                "linkedin_address": res['output']['company']['linkedin_address'],
+                "comp_id": res["output"]["company"]["id'],
+                "comp_domain": res["output"]["company"]["domain"],
+                "comp_name": res["output"]["company"]["company_name"],
+                "comp_website": res["output"]["company"]["website"],
+                "comp_linkedin_id": res["output"]["company"]["linkedin_id"],
+                "comp_linkedin_url": res["output"]["company"]["linkedin_url"],
+                "comp_linkedin_description": res["output"]["company"]["linkedin_description"],
+                "comp_size": res["output"]["company"]["size"],
+                "comp_linkedin_industry": res["output"]["company"]["linkedin_industry"],
+                "comp_linkedin_type": res["output"]["company"]["linkedin_type"],
+                "comp_linkedin_founded": res["output"]["company"]["linkedin_founded"],
+                "linkedin_employees_count": res["output"]["company"]["linkedin_employees_count"],
+                "linkedin_address": res["output"]["company"]["linkedin_address"],
             }
             companies.append(company)
 
-            for employee in res['output']['persons']:
+            for employee in res["output"]["persons"]:
                 contact = {
-                    'id': employee['id'],
-                    'first_name': employee['first_name'] if employee['first_name'] else "None",
-                    'last_name': employee['last_name'] if employee['last_name'] else "None",
-                    'linkedin_id': employee['linkedin_id'] if employee['linkedin_id'] else "None",
-                    'linkedin_url': employee['linkedin_url'] if employee['linkedin_url'] else "None",
-                    'personal_email': employee['personal_email'] if employee['personal_email'] else "None",
-                    'location': employee['location'] if employee['location'] else "None",
-                    'country': employee['country'] if employee['country'] else "None",
-                    'company_id': employee['company_id'] if employee['company_id'] else "None",
-                    'company_linkedin_id': employee['company_linkedin_id'] if employee['company_linkedin_id'] else "None",
-                    'company_name': employee['company_name'] if employee['company_name'] else "None",
-                    'company_domain': employee['company_domain'] if employee['company_domain'] else "None",
-                    'professional_email': employee['professional_email'] if employee['professional_email'] else "None",
-                    'mobile_phone': employee['mobile_phone'] if employee['mobile_phone'] else "None",
-                    'title': employee['title'] if employee['title'] else "None"
+                    "id": employee["id"],
+                    "first_name": employee["first_name"] if employee["first_name"] else "None",
+                    "last_name": employee["last_name"] if employee["last_name"] else "None",
+                    "linkedin_id": employee["linkedin_id"] if employee["linkedin_id"] else "None",
+                    "linkedin_url": employee["linkedin_url"] if employee["linkedin_url"] else "None",
+                    "personal_email": employee["personal_email"] if employee["personal_email"] else "None",
+                    "location": employee["location"] if employee["location"] else "None",
+                    "country": employee["country"] if employee["country"] else "None",
+                    "company_id": employee["company_id"] if employee["company_id"] else "None",
+                    "company_linkedin_id": employee["company_linkedin_id"] if employee["company_linkedin_id"] else "None",
+                    "company_name": employee["company_name"] if employee["company_name"] else "None",
+                    "company_domain": employee["company_domain"] if employee["company_domain"] else "None",
+                    "professional_email": employee["professional_email"] if employee["professional_email"] else "None",
+                    "mobile_phone": employee["mobile_phone"] if employee["mobile_phone"] else "None",
+                    "title": employee["title"] if employee["title"] else "None"
                 }
                 contacts.append(contact)
         else:
@@ -91,7 +91,7 @@ def write_contacts_to_csv(contacts, output_file):
                 writer.writerow(contact)
         return True
     except Exception:
-        print('Could not write contacts into CSV')
+        print("Could not write contacts into CSV")
         return False
 
 
@@ -118,21 +118,21 @@ def write_contacts_to_db(contacts):
         # Example: Inserting data into the table
         for contact in contacts:
             new_contact = Contact(
-                contact_linkedin_id=contact['id'],
-                first_name=contact['first_name'],
-                last_name=contact['last_name'],
-                linkedin_id=contact['linkedin_id'],
-                linkedin_url=contact['linkedin_url'],
-                personal_email=contact['personal_email'],
-                location=contact['location'],
-                country=contact['country'],
-                company_id=contact['company_id'],
-                company_linkedin_id=contact['company_linkedin_id'],
-                company_name=contact['company_name'],
-                company_domain=contact['company_domain'],
-                professional_email=contact['professional_email'],
-                mobile_phone=contact['mobile_phone'],
-                title=contact['title'],
+                contact_linkedin_id=contact["id"],
+                first_name=contact["first_name"],
+                last_name=contact["last_name"],
+                linkedin_id=contact["linkedin_id"],
+                linkedin_url=contact["linkedin_url"],
+                personal_email=contact["personal_email"],
+                location=contact["location"],
+                country=contact["country"],
+                company_id=contact["company_id"],
+                company_linkedin_id=contact["company_linkedin_id"],
+                company_name=contact["company_name"],
+                company_domain=contact["company_domain"],
+                professional_email=contact["professional_email"],
+                mobile_phone=contact["mobile_phone"],
+                title=contact["title"],
             )
 
             session.add(new_contact)
@@ -146,7 +146,7 @@ def write_contacts_to_db(contacts):
 
 
 def send_post_request(waterfall_api_key, company_name, domain_name, title_filter):
-    job_id = ''
+    job_id = ""
     watefall_url = "https://api.waterfall.to/v1/prospector"
 
     headers = {
@@ -164,7 +164,7 @@ def send_post_request(waterfall_api_key, company_name, domain_name, title_filter
     if response.status_code == 200:
         print(f"Successfully sent POST request for {company_name}")
         data = response.json()
-        job_id = data['job_id']
+        job_id = data["job_id"]
         print(response.json())
     else:
         print(f"Failed to send POST request for {company_name}")
@@ -205,7 +205,7 @@ def main():
     else:
         print("No jobs were created.")
 
-    output_file = 'contacts/contacts.csv'
+    output_file = "contacts/contacts.csv"
     write_contacts_to_csv(contacts, output_file)
     write_contacts_to_db(contacts)
 
